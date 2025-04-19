@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Recommender</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 Movie Recommender</h1>
+        <form method="POST" action="/predict">
+            <input type="text" name="text" placeholder="Enter a movie title..." required>
+            <button type="submit">Recommend</button>
+        </form>
+        {% if pred %}
+			<div class="result">
+				<h3>Recommended Movies</h3>
+				<ul>
+					{% for movie in pred.split(',') %}
+						<li>{{ movie.strip() }}</li>
+					{% endfor %}
+				</ul>
+			</div>
+		{% endif %}
+
+    </div>
+</body>
+</html>

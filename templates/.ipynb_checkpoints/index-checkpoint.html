@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Movie Recommender</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Movie Recommender</h1>
+        <form action="/predict" method="POST">
+            <textarea name="text" class="text_area" cols="40" rows="5" placeholder="Type Here..." required></textarea>
+            <br>
+            <input type="submit" value="get similar movies" class="button">
+        </form>
+        {% if pred %}
+            <h2 class="result">Similar Movies: {{ pred }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
