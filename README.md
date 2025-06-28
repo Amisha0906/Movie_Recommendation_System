@@ -7,7 +7,7 @@ Collaborative Filtering - a recommendation technique to predict user preferences
 
 ## 📊 Datasets Used
 
-[MovieLens Dataset]([url](https://grouplens.org/datasets/movielens/))
+[MovieLens Dataset](https://grouplens.org/datasets/movielens/)
 
 ## 📈 Approach
 
@@ -35,6 +35,6 @@ Collaborative Filtering - a recommendation technique to predict user preferences
 
 ## 🧾Medium Articles
 
-[Content based filtering]([url](https://medium.com/@amishasaha/building-a-movie-recommendation-system-part-i-5fc694406a85))
+[Content based filtering](https://medium.com/@amishasaha/building-a-movie-recommendation-system-part-i-5fc694406a85)
 
-[Collaborative filtering]([url](https://medium.com/@amishasaha/building-a-movie-recommendation-system-part-ii-514e1ec75db7))
+[Collaborative filtering](https://medium.com/@amishasaha/building-a-movie-recommendation-system-part-ii-514e1ec75db7)
